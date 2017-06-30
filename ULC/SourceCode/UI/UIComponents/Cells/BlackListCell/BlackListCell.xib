@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="GdY-1J-8Kt" customClass="BlackListCell" customModule="ULC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GdY-1J-8Kt" id="5yw-FH-GNm">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RrT-aa-Qb5">
+                        <rect key="frame" x="15" y="5" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="Z3E-JL-oAm"/>
+                            <constraint firstAttribute="height" constant="38" id="aA1-eF-R9a"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3T-Ha-GDn">
+                        <rect key="frame" x="63" y="16" width="38" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="hpL-en-JyM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="followers_mask_icon" translatesAutoresizingMaskIntoConstraints="NO" id="YEn-5d-piQ">
+                        <rect key="frame" x="15" y="5" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="ewp-uw-eaM"/>
+                            <constraint firstAttribute="width" constant="38" id="tmj-pF-UkM"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XTv-ZF-yuc">
+                        <rect key="frame" x="270" y="0.0" width="50" height="49"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="ymY-lu-81l"/>
+                        </constraints>
+                        <state key="normal" image="unblock_user"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="R3T-Ha-GDn" firstAttribute="centerY" secondItem="YEn-5d-piQ" secondAttribute="centerY" id="3MB-lL-R8V"/>
+                    <constraint firstItem="R3T-Ha-GDn" firstAttribute="leading" secondItem="RrT-aa-Qb5" secondAttribute="trailing" constant="10" id="5ER-la-UFJ"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XTv-ZF-yuc" secondAttribute="bottom" id="6G1-GO-W9P"/>
+                    <constraint firstItem="YEn-5d-piQ" firstAttribute="leading" secondItem="5yw-FH-GNm" secondAttribute="leading" constant="15" id="KlL-GK-N1d"/>
+                    <constraint firstItem="RrT-aa-Qb5" firstAttribute="centerY" secondItem="5yw-FH-GNm" secondAttribute="centerY" id="Mk2-Mm-Qy7"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XTv-ZF-yuc" secondAttribute="trailing" constant="10" id="aEv-nt-Vsg"/>
+                    <constraint firstItem="RrT-aa-Qb5" firstAttribute="leading" secondItem="5yw-FH-GNm" secondAttribute="leading" constant="15" id="aG3-kO-cP5"/>
+                    <constraint firstItem="XTv-ZF-yuc" firstAttribute="top" secondItem="5yw-FH-GNm" secondAttribute="topMargin" id="gHm-pB-TfJ"/>
+                    <constraint firstItem="YEn-5d-piQ" firstAttribute="centerY" secondItem="5yw-FH-GNm" secondAttribute="centerY" id="zlw-lD-7fo"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="6G1-GO-W9P"/>
+                        <exclude reference="aEv-nt-Vsg"/>
+                        <exclude reference="gHm-pB-TfJ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="XTv-ZF-yuc" secondAttribute="bottom" constant="1" id="6yf-l2-JSx"/>
+                <constraint firstItem="XTv-ZF-yuc" firstAttribute="top" secondItem="GdY-1J-8Kt" secondAttribute="top" id="LgE-Tv-POt"/>
+                <constraint firstAttribute="trailing" secondItem="XTv-ZF-yuc" secondAttribute="trailing" id="ezP-IJ-JDg"/>
+            </constraints>
+            <connections>
+                <outlet property="unblockButton" destination="XTv-ZF-yuc" id="JpV-sY-1iG"/>
+                <outlet property="userAvatarImageView" destination="RrT-aa-Qb5" id="ius-Hv-bcS"/>
+                <outlet property="userNameLabel" destination="R3T-Ha-GDn" id="S3s-2N-f3R"/>
+            </connections>
+            <point key="canvasLocation" x="359" y="195"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="followers_mask_icon" width="40" height="40"/>
+        <image name="unblock_user" width="21" height="21"/>
+    </resources>
+</document>

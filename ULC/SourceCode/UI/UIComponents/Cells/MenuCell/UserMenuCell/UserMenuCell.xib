@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bV0-o6-9Gt" customClass="UserMenuCell" customModule="ULC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bV0-o6-9Gt" id="bRt-sf-8pb">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mini_avatar_icon" translatesAutoresizingMaskIntoConstraints="NO" id="mt4-Ey-ECY" userLabel="Avatar Image View">
+                        <rect key="frame" x="10" y="7" width="35" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="8UC-yU-jZP"/>
+                            <constraint firstAttribute="height" constant="35" id="Igr-mu-oN8"/>
+                        </constraints>
+                    </imageView>
+                    <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J79-PQ-SVb">
+                        <rect key="frame" x="55" y="48" width="265" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="lb5-8Y-5Gz"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzU-0B-6wt">
+                        <rect key="frame" x="55" y="12" width="221" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="aZF-wg-LpP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyJ-X5-tHd">
+                        <rect key="frame" x="281" y="14" width="29" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="9vR-hn-Mca"/>
+                            <constraint firstAttribute="width" constant="29" id="Qpk-sZ-TdX"/>
+                        </constraints>
+                        <state key="normal" image="menu_photo_icon"/>
+                        <connections>
+                            <action selector="changePhotoAction:" destination="bV0-o6-9Gt" eventType="touchUpInside" id="AJh-BC-uVh"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mt4-Ey-ECY" firstAttribute="centerY" secondItem="bRt-sf-8pb" secondAttribute="centerY" id="2GG-7t-JUP"/>
+                    <constraint firstItem="rzU-0B-6wt" firstAttribute="centerY" secondItem="mt4-Ey-ECY" secondAttribute="centerY" id="ALi-3n-yvF"/>
+                    <constraint firstItem="rzU-0B-6wt" firstAttribute="leading" secondItem="mt4-Ey-ECY" secondAttribute="trailing" constant="10" id="DcX-Xs-ns5"/>
+                    <constraint firstAttribute="trailing" secondItem="iyJ-X5-tHd" secondAttribute="trailing" constant="10" id="HY2-aX-eKY"/>
+                    <constraint firstItem="mt4-Ey-ECY" firstAttribute="leading" secondItem="bRt-sf-8pb" secondAttribute="leading" constant="10" id="IA5-uf-rSb"/>
+                    <constraint firstItem="J79-PQ-SVb" firstAttribute="leading" secondItem="bRt-sf-8pb" secondAttribute="leading" constant="55" id="MqH-F4-Nbj"/>
+                    <constraint firstAttribute="trailing" secondItem="J79-PQ-SVb" secondAttribute="trailing" id="bLA-nu-643"/>
+                    <constraint firstAttribute="bottom" secondItem="J79-PQ-SVb" secondAttribute="bottom" id="ciG-dU-H3n"/>
+                    <constraint firstItem="iyJ-X5-tHd" firstAttribute="centerY" secondItem="bRt-sf-8pb" secondAttribute="centerY" id="rjb-nA-TIA"/>
+                    <constraint firstItem="iyJ-X5-tHd" firstAttribute="leading" secondItem="rzU-0B-6wt" secondAttribute="trailing" constant="5" id="wge-bM-cHa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarImageView" destination="mt4-Ey-ECY" id="9ee-y3-44a"/>
+                <outlet property="nameLabel" destination="rzU-0B-6wt" id="lZ9-KY-xhb"/>
+                <outlet property="photoButton" destination="iyJ-X5-tHd" id="Tdi-dx-nS5"/>
+            </connections>
+            <point key="canvasLocation" x="415" y="254"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="menu_photo_icon" width="29" height="22"/>
+        <image name="mini_avatar_icon" width="25" height="25"/>
+    </resources>
+</document>

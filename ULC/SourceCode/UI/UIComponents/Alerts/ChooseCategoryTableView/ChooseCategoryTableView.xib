@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Wc0-Wg-nSG" customClass="ChooseCategoryTableView" customModule="ULC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gw5-qC-ofF">
+                    <rect key="frame" x="0.0" y="40" width="300" height="360"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Rqj-6H-W6b"/>
+                        <outlet property="delegate" destination="-1" id="D0J-XC-Qca"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XB-xX-NVH" userLabel="Choosen Category Label">
+                    <rect key="frame" x="5" y="0.0" width="295" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ahm-F1-ibC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gw5-qC-ofF" secondAttribute="trailing" id="Cqu-kO-X8D"/>
+                <constraint firstAttribute="trailing" secondItem="6XB-xX-NVH" secondAttribute="trailing" id="F6b-Vs-qU5"/>
+                <constraint firstItem="6XB-xX-NVH" firstAttribute="top" secondItem="Wc0-Wg-nSG" secondAttribute="top" id="K8D-Xa-gYv"/>
+                <constraint firstItem="gw5-qC-ofF" firstAttribute="top" secondItem="6XB-xX-NVH" secondAttribute="bottom" id="YKc-AF-BCP"/>
+                <constraint firstItem="gw5-qC-ofF" firstAttribute="leading" secondItem="Wc0-Wg-nSG" secondAttribute="leading" id="eEQ-ia-4Uu"/>
+                <constraint firstAttribute="bottom" secondItem="gw5-qC-ofF" secondAttribute="bottom" id="ggp-5i-gAu"/>
+                <constraint firstItem="6XB-xX-NVH" firstAttribute="leading" secondItem="Wc0-Wg-nSG" secondAttribute="leading" constant="5" id="hiq-IH-KK9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="categoryTableVeiw" destination="gw5-qC-ofF" id="7Ec-CU-yjp"/>
+                <outlet property="choosenCategotyLabel" destination="6XB-xX-NVH" id="z3n-fl-esj"/>
+            </connections>
+            <point key="canvasLocation" x="394" y="70"/>
+        </view>
+    </objects>
+</document>

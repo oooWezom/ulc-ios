@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wRB-Qo-g7D" customClass="UserMessageView" customModule="ULC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iR0-1W-Oh8">
+                    <rect key="frame" x="20" y="35" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="2K8-gv-wXN"/>
+                        <constraint firstAttribute="height" constant="40" id="WHD-OS-LVW"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rt-kL-kvg">
+                    <rect key="frame" x="0.0" y="100" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ahf-E6-fug"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="0.6886920647" blue="0.27190828309999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0rP-Qe-blH">
+                    <rect key="frame" x="70" y="46" width="210" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.69999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDi-2n-PbB" userLabel="Separator View">
+                    <rect key="frame" x="0.0" y="99" width="300" height="1"/>
+                    <color key="backgroundColor" red="0.87450980389999999" green="0.87450980389999999" blue="0.87450980389999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Rsx-3O-Drl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0rP-Qe-blH" firstAttribute="centerY" secondItem="iR0-1W-Oh8" secondAttribute="centerY" id="1Df-4w-A0H"/>
+                <constraint firstItem="RDi-2n-PbB" firstAttribute="width" secondItem="wRB-Qo-g7D" secondAttribute="width" id="7id-Sg-yKX"/>
+                <constraint firstItem="RDi-2n-PbB" firstAttribute="centerX" secondItem="wRB-Qo-g7D" secondAttribute="centerX" id="BRf-52-1GW"/>
+                <constraint firstItem="iR0-1W-Oh8" firstAttribute="leading" secondItem="wRB-Qo-g7D" secondAttribute="leading" constant="20" id="IUe-0l-AHZ"/>
+                <constraint firstAttribute="bottom" secondItem="4rt-kL-kvg" secondAttribute="bottom" id="O3K-Cq-bCd"/>
+                <constraint firstItem="iR0-1W-Oh8" firstAttribute="top" secondItem="wRB-Qo-g7D" secondAttribute="top" constant="35" id="TK7-Cm-RNb"/>
+                <constraint firstItem="4rt-kL-kvg" firstAttribute="leading" secondItem="wRB-Qo-g7D" secondAttribute="leading" id="XaJ-D6-6Pf"/>
+                <constraint firstItem="0rP-Qe-blH" firstAttribute="leading" secondItem="iR0-1W-Oh8" secondAttribute="trailing" constant="10" id="YLJ-rK-d8D"/>
+                <constraint firstItem="4rt-kL-kvg" firstAttribute="top" secondItem="RDi-2n-PbB" secondAttribute="bottom" id="a3k-8C-RXy"/>
+                <constraint firstAttribute="trailing" secondItem="4rt-kL-kvg" secondAttribute="trailing" id="eFA-oy-DBj"/>
+                <constraint firstAttribute="trailing" secondItem="0rP-Qe-blH" secondAttribute="trailing" constant="20" id="rZc-7x-xPU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarImageView" destination="iR0-1W-Oh8" id="8G0-Jd-QWq"/>
+                <outlet property="messageLabel" destination="0rP-Qe-blH" id="kFX-cm-ipy"/>
+                <outlet property="okButton" destination="4rt-kL-kvg" id="3SA-Zw-lM6"/>
+            </connections>
+            <point key="canvasLocation" x="400" y="331"/>
+        </view>
+    </objects>
+</document>

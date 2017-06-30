@@ -1,0 +1,40 @@
+LoginTextFiledColor : e9e7e5
+LoginButtonNormal : ff8f00
+LoginButtonSelected : ffbf71
+NavigationBarColor : ff8f00
+ForgotPasswordButtonNormal : ff8f00
+ForgotPasswordButtonSelected : ffbf71
+DoneButtonDisable : ffbf71
+DoneButtonEnable : ff8f00
+CellBackgroundColor : ffffff
+EventCellBackgound : e1e1e6
+EventSeparatorLine : d3d3d7
+AvatarExpColor : 7772bd
+MessageViewColor : 4F528F
+UnityButtonNormalColor : 9194a5
+NewsFeedBackgroundColor : ebecee
+TwoPlaySessionsBackgroungColor : E6E5EB
+
+
+OkButtonNormal : ff8f00
+OkButtonSelected : ffbf71
+
+MessageSelectedColor : ffe9cc
+
+UnityViewBackground : 151727
+
+UnreadMessageBackgroundColor: ffe9cc
+SessionInfoBackgroundColor: edeef0
+
+
+SessionChatBackgroundColor: 232740
+SessionChatFooterBackgroundColor: 2b2f4e
+SessionLightGreyColor: f0f0f0
+SessionSendViewColor: 898ca5
+
+
+SessionLightGreyColor: f0f0f0
+SessionSendViewColor: 898ca5
+
+TalkViewBackgroundColor: efeff4
+ActivitySessionColor: 717277

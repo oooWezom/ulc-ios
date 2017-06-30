@@ -1,0 +1,11 @@
+// System.Void MessageRouter::SendAndroidMessage(UnityMessage)
+extern "C"  void MessageRouter_SendAndroidMessage_m2906714647 (MessageRouter_t3503706640 * __this, UnityMessage_t2666804978 * ___message0, const MethodInfo* method)
+{
+	String_t* V_0 = NULL;
+	{
+		UnityMessage_t2666804978 * L_0 = ___message0;
+		String_t* L_1 = JsonUtility_ToJson_m256852485(NULL /*static, unused*/, L_0, /*hidden argument*/NULL);
+		V_0 = L_1;
+		return;
+	}
+}

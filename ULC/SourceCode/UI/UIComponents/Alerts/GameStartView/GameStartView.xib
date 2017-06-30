@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.94999999999999996" contentMode="scaleToFill" id="iN0-l3-epB" customClass="GameStartView" customModule="ULC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="128"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMe-Ne-qeS" userLabel="Title Label">
+                    <rect key="frame" x="0.0" y="16" width="314" height="22"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNl-zS-Uh7" userLabel="Timer Label">
+                    <rect key="frame" x="0.0" y="64" width="314" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eTO-2x-OWw" userLabel="Separator View">
+                    <rect key="frame" x="0.0" y="87" width="314" height="1"/>
+                    <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Nz1-Jo-4Ex"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4t-Ze-Q5O" userLabel="Cancel Button">
+                    <rect key="frame" x="0.0" y="88" width="314" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Kt9-NC-e3F"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="0.49019607840000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="A4t-Ze-Q5O" secondAttribute="trailing" id="5EF-mT-D13"/>
+                <constraint firstItem="VNl-zS-Uh7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BAj-oc-gCk"/>
+                <constraint firstItem="lMe-Ne-qeS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CfC-MK-PFE"/>
+                <constraint firstAttribute="trailing" secondItem="lMe-Ne-qeS" secondAttribute="trailing" id="JFC-7S-vHo"/>
+                <constraint firstItem="VNl-zS-Uh7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OvR-h8-Jq5"/>
+                <constraint firstItem="A4t-Ze-Q5O" firstAttribute="top" secondItem="eTO-2x-OWw" secondAttribute="bottom" id="V95-6L-iXP"/>
+                <constraint firstItem="A4t-Ze-Q5O" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y7u-iH-iw3"/>
+                <constraint firstAttribute="bottom" secondItem="A4t-Ze-Q5O" secondAttribute="bottom" id="jgU-x8-VlT"/>
+                <constraint firstItem="eTO-2x-OWw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rDB-Zj-EhQ"/>
+                <constraint firstItem="lMe-Ne-qeS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="rWc-Hc-pD8"/>
+                <constraint firstAttribute="trailing" secondItem="VNl-zS-Uh7" secondAttribute="trailing" id="uoJ-KV-F9Z"/>
+                <constraint firstItem="VNl-zS-Uh7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wPT-ZX-p7D"/>
+                <constraint firstAttribute="trailing" secondItem="eTO-2x-OWw" secondAttribute="trailing" id="xSh-gZ-7KM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cancelButton" destination="A4t-Ze-Q5O" id="5Jd-XK-4b4"/>
+                <outlet property="timerLabel" destination="VNl-zS-Uh7" id="uKr-vq-Dlg"/>
+                <outlet property="titleLabel" destination="lMe-Ne-qeS" id="zdM-rA-dKW"/>
+            </connections>
+            <point key="canvasLocation" x="247" y="231"/>
+        </view>
+    </objects>
+</document>

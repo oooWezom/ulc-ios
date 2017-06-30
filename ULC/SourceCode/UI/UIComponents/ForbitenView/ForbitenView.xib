@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hhD-QT-cKp" customClass="ForbitenView" customModule="ULC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwK-ie-OOk">
+                    <rect key="frame" x="10" y="275" width="580" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="fj0-6M-8HC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="DwK-ie-OOk" firstAttribute="centerX" secondItem="hhD-QT-cKp" secondAttribute="centerX" id="JYk-jv-4BB"/>
+                <constraint firstItem="DwK-ie-OOk" firstAttribute="leading" secondItem="hhD-QT-cKp" secondAttribute="leading" constant="10" id="NIc-QO-ZyM"/>
+                <constraint firstItem="DwK-ie-OOk" firstAttribute="centerY" secondItem="hhD-QT-cKp" secondAttribute="centerY" id="PTH-TU-o2n"/>
+                <constraint firstAttribute="trailing" secondItem="DwK-ie-OOk" secondAttribute="trailing" constant="10" id="nAZ-qg-imc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="errorLabel" destination="DwK-ie-OOk" id="MOQ-O5-d8U"/>
+            </connections>
+            <point key="canvasLocation" x="574" y="361"/>
+        </view>
+    </objects>
+</document>

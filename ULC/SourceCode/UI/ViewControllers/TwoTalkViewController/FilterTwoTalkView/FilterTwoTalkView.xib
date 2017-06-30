@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Cuu-zS-tVS" customClass="FilterTwoTalkView" customModule="ULC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcp-Ul-NaQ" userLabel="All Sessions Button">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.87450980389999999" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="allSessionsAction:" destination="Cuu-zS-tVS" eventType="touchUpInside" id="SFd-MB-DU7"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="azo-vs-dSw" userLabel="Separator View">
+                    <rect key="frame" x="0.0" y="50" width="400" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="tU6-6W-sXN"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mou-fV-40D" userLabel="Following Sessions Button">
+                    <rect key="frame" x="0.0" y="51" width="400" height="49"/>
+                    <color key="backgroundColor" red="1" green="0.87450980389999999" blue="0.72156862749999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="followSessionsAction:" destination="Cuu-zS-tVS" eventType="touchUpInside" id="Jtl-ve-NwI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="azo-vs-dSw" firstAttribute="centerY" secondItem="Cuu-zS-tVS" secondAttribute="centerY" id="78I-99-SF2"/>
+                <constraint firstAttribute="trailing" secondItem="Mou-fV-40D" secondAttribute="trailing" id="Cmn-mQ-Seo"/>
+                <constraint firstAttribute="bottom" secondItem="Mou-fV-40D" secondAttribute="bottom" id="De8-6o-WZo"/>
+                <constraint firstItem="azo-vs-dSw" firstAttribute="leading" secondItem="Cuu-zS-tVS" secondAttribute="leading" id="Hob-Cp-1bW"/>
+                <constraint firstItem="rcp-Ul-NaQ" firstAttribute="bottom" secondItem="azo-vs-dSw" secondAttribute="top" id="UaF-ut-gqc"/>
+                <constraint firstItem="rcp-Ul-NaQ" firstAttribute="top" secondItem="Cuu-zS-tVS" secondAttribute="top" id="VBv-67-Dow"/>
+                <constraint firstItem="rcp-Ul-NaQ" firstAttribute="leading" secondItem="Cuu-zS-tVS" secondAttribute="leading" id="gRz-Un-Lud"/>
+                <constraint firstAttribute="trailing" secondItem="rcp-Ul-NaQ" secondAttribute="trailing" id="gxZ-AX-sUj"/>
+                <constraint firstAttribute="trailing" secondItem="azo-vs-dSw" secondAttribute="trailing" id="m4f-fJ-ccF"/>
+                <constraint firstItem="Mou-fV-40D" firstAttribute="leading" secondItem="Cuu-zS-tVS" secondAttribute="leading" id="uEl-XW-bkR"/>
+                <constraint firstItem="azo-vs-dSw" firstAttribute="centerX" secondItem="Cuu-zS-tVS" secondAttribute="centerX" id="whm-li-uwk"/>
+                <constraint firstItem="Mou-fV-40D" firstAttribute="top" secondItem="azo-vs-dSw" secondAttribute="bottom" id="zdH-31-uI6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="allSessionButton" destination="rcp-Ul-NaQ" id="B8x-Sy-As1"/>
+                <outlet property="followingSessionButton" destination="Mou-fV-40D" id="hmP-KS-aEg"/>
+            </connections>
+            <point key="canvasLocation" x="541" y="394"/>
+        </view>
+    </objects>
+</document>

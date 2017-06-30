@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TwoPlayGamingBottomView" customModule="ULC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="37"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5s-J0-fcw" userLabel="Gradient View" customClass="GradientView" customModule="ULC" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="356" height="37"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDV-a2-I0V" userLabel="Leave Button">
+                            <rect key="frame" x="0.0" y="0.0" width="117" height="37"/>
+                        </button>
+                    </subviews>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="65Z-20-dRD" userLabel="Leave Image View">
+                    <rect key="frame" x="8" y="10" width="17" height="17"/>
+                </imageView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="gAV-S7-djJ" userLabel="Next Activity Indicator">
+                    <rect key="frame" x="313" y="9" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="bSt-dA-p8X"/>
+                        <constraint firstAttribute="width" constant="20" id="t4h-Yf-q6T"/>
+                    </constraints>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SiN-il-bMR" userLabel="Next Button">
+                    <rect key="frame" x="239" y="0.0" width="117" height="37"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bAc-bE-3Mu" userLabel="Next Image View">
+                    <rect key="frame" x="331" y="10" width="17" height="17"/>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="SiN-il-bMR" secondAttribute="trailing" id="1Ah-qc-iNn"/>
+                <constraint firstAttribute="bottom" secondItem="R5s-J0-fcw" secondAttribute="bottom" id="1wc-wW-E5p"/>
+                <constraint firstItem="65Z-20-dRD" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.45" id="62s-97-EOP"/>
+                <constraint firstItem="gAV-S7-djJ" firstAttribute="centerY" secondItem="SiN-il-bMR" secondAttribute="centerY" id="7Qr-o1-iAF"/>
+                <constraint firstAttribute="bottom" secondItem="SiN-il-bMR" secondAttribute="bottom" id="B5C-NO-qpg"/>
+                <constraint firstItem="bAc-bE-3Mu" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="HEK-JX-Cbo"/>
+                <constraint firstItem="R5s-J0-fcw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HxI-XU-Az7"/>
+                <constraint firstItem="SiN-il-bMR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KII-ip-tFH"/>
+                <constraint firstItem="bAc-bE-3Mu" firstAttribute="leading" secondItem="gAV-S7-djJ" secondAttribute="trailing" constant="-2" id="KLl-hh-K62"/>
+                <constraint firstItem="65Z-20-dRD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="NlH-wK-tje"/>
+                <constraint firstAttribute="trailing" secondItem="bAc-bE-3Mu" secondAttribute="trailing" constant="8" id="Q8Q-34-F8Q"/>
+                <constraint firstItem="R5s-J0-fcw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ZXI-yg-riJ"/>
+                <constraint firstAttribute="trailing" secondItem="R5s-J0-fcw" secondAttribute="trailing" id="cto-h2-PTv"/>
+                <constraint firstItem="bAc-bE-3Mu" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.45" id="hbY-0V-cxl"/>
+                <constraint firstItem="SiN-il-bMR" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.33" id="it0-DQ-mhs"/>
+                <constraint firstItem="bAc-bE-3Mu" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.45" id="oax-7f-iai"/>
+                <constraint firstItem="65Z-20-dRD" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.45" id="qYZ-sK-ps2"/>
+                <constraint firstItem="65Z-20-dRD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wF2-Wq-UCb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="gradientView" destination="R5s-J0-fcw" id="9HJ-EK-bMl"/>
+                <outlet property="leaveButton" destination="bDV-a2-I0V" id="wAg-iS-Goz"/>
+                <outlet property="leaveImageView" destination="65Z-20-dRD" id="2jF-A5-hJg"/>
+                <outlet property="nextActivityIndicator" destination="gAV-S7-djJ" id="f3o-RU-ZXc"/>
+                <outlet property="nextButton" destination="SiN-il-bMR" id="KiF-7X-9UH"/>
+                <outlet property="nextImageView" destination="bAc-bE-3Mu" id="Rm9-9t-a4s"/>
+            </connections>
+            <point key="canvasLocation" x="443" y="14.5"/>
+        </view>
+    </objects>
+</document>

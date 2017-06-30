@@ -1,0 +1,3 @@
+[submodule "ulc-ios-games"]
+	path = ulc-ios-games
+	url = https://AdamLuisSean@bitbucket.org/wezom/ulc-ios-games.git

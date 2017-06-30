@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Play Anonymous View Controller-->
+        <scene sceneID="R6D-I8-c1z">
+            <objects>
+                <viewController storyboardIdentifier="PlayAnonymousViewController" id="MgO-2d-t6x" customClass="PlayAnonymousViewController" customModule="ULC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y27-qi-grR"/>
+                        <viewControllerLayoutGuide type="bottom" id="R0s-hl-1XP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0aC-Lk-ehG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oZx-TD-Rxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2706" y="1013"/>
+        </scene>
+        <!--Talk Anonymous View Controller-->
+        <scene sceneID="40D-XI-SHA">
+            <objects>
+                <viewController storyboardIdentifier="TalkAnonymousViewController" id="adw-XO-p0D" customClass="TalkAnonymousViewController" customModule="ULC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FTh-ep-ViX"/>
+                        <viewControllerLayoutGuide type="bottom" id="sDb-9t-MEL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oTD-eW-czB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EjX-yA-85e">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sDb-9t-MEL" firstAttribute="top" secondItem="EjX-yA-85e" secondAttribute="bottom" id="23O-hr-tKr"/>
+                            <constraint firstItem="EjX-yA-85e" firstAttribute="top" secondItem="FTh-ep-ViX" secondAttribute="bottom" id="Okj-FG-xe9"/>
+                            <constraint firstItem="EjX-yA-85e" firstAttribute="leading" secondItem="oTD-eW-czB" secondAttribute="leading" id="mD2-KL-ind"/>
+                            <constraint firstAttribute="trailing" secondItem="EjX-yA-85e" secondAttribute="trailing" id="qKu-DI-N6y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4Av-E1-SWy"/>
+                    <connections>
+                        <outlet property="containerView" destination="EjX-yA-85e" id="nI2-TM-aQm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FVB-zP-4LF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4261" y="1013"/>
+        </scene>
+        <!--Container Anonymous View Controller-->
+        <scene sceneID="iAo-0l-EaB">
+            <objects>
+                <viewController storyboardIdentifier="ContainerAnonymousViewController" id="YKM-KV-3MQ" customClass="ContainerAnonymousViewController" customModule="ULC" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WUw-II-vbF"/>
+                        <viewControllerLayoutGuide type="bottom" id="emm-ER-ncZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hz6-qR-OLL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGK-B6-MKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3924" y="223"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SettingSegmentControlCell" customModule="ULC" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8i6-gR-k1t">
+                        <rect key="frame" x="102" y="8" width="117" height="29"/>
+                        <segments>
+                            <segment title=""/>
+                            <segment title=""/>
+                        </segments>
+                        <connections>
+                            <action selector="sexSegmentControlAction:" destination="KGk-i7-Jjw" eventType="valueChanged" id="yq0-I9-37Z"/>
+                        </connections>
+                    </segmentedControl>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="8i6-gR-k1t" firstAttribute="centerX" secondItem="KGk-i7-Jjw" secondAttribute="centerX" id="8PD-T1-rIc"/>
+                <constraint firstItem="8i6-gR-k1t" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="RJJ-Oz-zDR"/>
+            </constraints>
+            <connections>
+                <outlet property="sexSegmentedControl" destination="8i6-gR-k1t" id="yRx-Sa-lx0"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="367"/>
+        </tableViewCell>
+    </objects>
+</document>
